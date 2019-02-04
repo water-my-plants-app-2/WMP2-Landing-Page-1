@@ -1,7 +1,7 @@
 .feature-description {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg, #787f84 25%, #c1f4c9 75%, #bbe5cb);
 
     h2 {
@@ -41,15 +41,41 @@
 
     button {
         .login-btn();
+        width: 50%;
+        // align-content: center
     }
 }
+
+
 .testimonials {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
+    padding: 0 2rem;
+
+    
+    .test-h1 {
+        font-family: sans-serif;
+        padding: 2.5rem 0;
+    }
+
+    .test-h3 {
+        font-family: sans-serif;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .divider {
+        height: 5px;
+        width: 33%;
+        background-color: black;
+        
+    }
 
     .testimonial-intro {
         .column-centered-section;
+        margin-top: 1px;
+        padding: 2rem;
     }
     
     .user-stories {
@@ -57,5 +83,14 @@
         div {
             .column-centered-section;
         }
+    }
+
+    button {
+        .login-btn;
+        width: 33%;
+    }
+
+    img {
+        
     }
 }

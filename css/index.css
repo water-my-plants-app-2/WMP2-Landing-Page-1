@@ -150,6 +150,10 @@ h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 2.85rem;
+  padding-bottom: 10px;
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
@@ -169,7 +173,7 @@ img {
   margin: 0 auto;
 }
 button {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 header {
   height: 400px;
@@ -205,7 +209,7 @@ header button:hover {
 .feature-description {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg, #787f84 25%, #c1f4c9 75%, #bbe5cb);
 }
 .feature-description h2 {
@@ -246,6 +250,7 @@ header button:hover {
   -moz-border-radius: 10px;
   cursor: pointer;
   margin: 20px 0;
+  width: 50%;
 }
 @media (min-width: 500px) {
   .feature-description button {
@@ -260,12 +265,29 @@ header button:hover {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
+  padding: 0 2rem;
+}
+.testimonials .test-h1 {
+  font-family: sans-serif;
+  padding: 2.5rem 0;
+}
+.testimonials .test-h3 {
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.testimonials .divider {
+  height: 5px;
+  width: 33%;
+  background-color: black;
 }
 .testimonials .testimonial-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1px;
+  padding: 2rem;
 }
 .testimonials .user-stories {
   display: flex;
@@ -278,4 +300,25 @@ header button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.testimonials button {
+  padding: 2rem 4rem;
+  background-color: #787f84;
+  color: #c1f4c9;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 33%;
+}
+@media (min-width: 500px) {
+  .testimonials button {
+    font-size: 1.6rem;
+  }
+}
+.testimonials button:hover {
+  background-color: #c1f4c9;
+  color: #787f84;
 }
