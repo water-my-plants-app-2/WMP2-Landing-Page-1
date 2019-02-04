@@ -126,18 +126,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.main-nav {
-  background: #c7dbf4;
-  color: #000;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.main-nav .top-menu h1 {
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 20px;
+.feature-description {
+  display: flex;
 }
-.main-nav .top-menu h1 a {
-  text-decoration: none;
-}
-.main-nav .top-menu h1 a:hover {
-  text-decoration: underline;
+.feature-description .feature-icon-container {
+  width: 50%;
+  display: flex;
 }
