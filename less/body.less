@@ -1,25 +1,55 @@
+// .planty{
+//     height: 100px;
+//     width: 100%;
+//     background-image: 
+
+//     linear-gradient(
+//     @light-grey(255, 0, 0, 0.45), 
+//     @light-green(255, 0, 0, 0.45)
+//     ),
+
+//     url(images/jungle.jpg);
+// }
+
+
 .feature-description {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg, #787f84 25%, #c1f4c9 75%, #bbe5cb);
+    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg, @dark-grey 25%, @dark-green 75%, @whiteish);
 
-    h2 {
-        padding: 2rem;
-        background-color: white;    
-    }
+ 
+    // h2 {
+    //     padding: 2rem;
+    //     background-color: white;    
+    // }
 
     .feature-icon-container {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-top: 4%;
-        border: 1px solid red;
+        // border: 1px solid red;
+
+        .feature-header {
+            padding: 0 2rem 2rem 2rem;
+            color: white;
+            width: 100%;
+            align-content: center
+
+        }
 
         img {
             max-width: 50%;
             padding: 1%;
+            width: 100px;
+            height: 100px;
+
+            @media @desktop {
+                width: 200px;
+                height: 200px;
+            }
 
         }
 
@@ -27,7 +57,7 @@
     .feature-text-container {
         .column-centered-section;
         width: 100%;
-        border: 1px solid red;
+        // border: 1px solid red;
         color: white;
 
         p {
@@ -37,12 +67,19 @@
         // flex-direction: column;
         // justify-content: center;
         // align-items: center;
+        .divider {
+            height: 5px;
+            width: 33%;
+            background-color: black;
+            
+        }
     }
 
     .buttons {
         display: flex;
         justify-content: space-between;
-    
+        padding: 0 2rem;
+
         .signup {
           width: 45%;
           margin: .5rem;
@@ -61,33 +98,33 @@
 .testimonials {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 0 2rem;
-
     
-    .test-h1 {
-        font-family: sans-serif;
-        padding: 2.5rem 0;
-    }
-
-    .test-h3 {
-        font-family: sans-serif;
-        text-align: center;
-        padding-bottom: 5rem;
-    }
-
-    .divider {
-        height: 5px;
-        width: 33%;
-        background-color: black;
-        
-    }
-
     .testimonial-intro {
         .column-centered-section;
         margin-top: 1px;
         padding: 2rem;
-    }
+      
+        .test-h1 {
+            font-family: sans-serif;
+            padding: 2.5rem 0;
+        }
+    
+        .test-h3 {
+            font-family: sans-serif;
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+    
+        .divider {
+            height: 5px;
+            width: 33%;
+            background-color: black;
+            
+        }
+    
+    } 
     
     .user-stories {
         .column-centered-section;
@@ -97,7 +134,7 @@
 
         .user-container {
             margin: 2rem 0;
-            padding: 1rem;
+            padding: 2rem 2rem 1rem 2rem;
             border: 1px dashed black;
 
             h3 {
@@ -109,7 +146,7 @@
     .buttons {
         display: flex;
         justify-content: space-between;
-    
+        
         .signup {
           width: 45%;
           margin: .5rem;
@@ -122,4 +159,8 @@
         }
       }
 
+}
+
+footer {
+    text-align: center;
 }

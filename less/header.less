@@ -20,7 +20,7 @@
 // }
 
 header {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -30,18 +30,29 @@ header {
   img {
     width: 20%;
   }
+  h1 {
+    color: @dark-grey;
+  }
+  p {
+    margin-top: 2rem;
+    width: 70%;
+    color: @dark-grey;
+
+  }
+
   .buttons {
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem;
 
     .signup {
       width: 45%;
-      margin: .5rem;
+      // margin: .5rem;
       .signup-btn();
     }
     .login {
       width: 45%;
-      margin: .5rem;
+      // margin: .5rem;
       .login-btn();
     }
   }

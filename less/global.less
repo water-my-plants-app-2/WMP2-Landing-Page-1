@@ -3,14 +3,25 @@
 }
 html {
     font-size: 62.5%;
+
 }
 
-html, body {
-    font-family: 'Roboto', sans-serif;
+
+
+body {
+    font-family: 'noto sans', sans-serif;
+    @media @desktop {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h1 {
