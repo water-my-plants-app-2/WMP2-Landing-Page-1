@@ -174,6 +174,24 @@ img {
 }
 button {
   font-size: 2rem;
+  padding: 2rem 4rem;
+  background-color: #787f84;
+  color: #c1f4c9;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+@media (min-width: 500px) {
+  button {
+    font-size: 1.6rem;
+  }
+}
+button:hover {
+  background-color: #c1f4c9;
+  color: #787f84;
 }
 header {
   height: 400px;
@@ -186,7 +204,35 @@ header {
 header img {
   width: 20%;
 }
-header button {
+header .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+header .buttons .signup {
+  width: 45%;
+  margin: 0.5rem;
+  padding: 2rem 4rem;
+  background-color: #c1f4c9;
+  color: #787f84;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+@media (min-width: 500px) {
+  header .buttons .signup {
+    font-size: 1.6rem;
+  }
+}
+header .buttons .signup:hover {
+  background-color: #787f84;
+  color: #c1f4c9;
+}
+header .buttons .login {
+  width: 45%;
+  margin: 0.5rem;
   padding: 2rem 4rem;
   background-color: #787f84;
   color: #c1f4c9;
@@ -198,11 +244,11 @@ header button {
   margin: 20px 0;
 }
 @media (min-width: 500px) {
-  header button {
+  header .buttons .login {
     font-size: 1.6rem;
   }
 }
-header button:hover {
+header .buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
 }
@@ -240,7 +286,35 @@ header button:hover {
 .feature-description .feature-text-container p {
   padding: 2rem;
 }
-.feature-description button {
+.feature-description .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-description .buttons .signup {
+  width: 45%;
+  margin: 0.5rem;
+  padding: 2rem 4rem;
+  background-color: #c1f4c9;
+  color: #787f84;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+@media (min-width: 500px) {
+  .feature-description .buttons .signup {
+    font-size: 1.6rem;
+  }
+}
+.feature-description .buttons .signup:hover {
+  background-color: #787f84;
+  color: #c1f4c9;
+}
+.feature-description .buttons .login {
+  width: 45%;
+  margin: 0.5rem;
   padding: 2rem 4rem;
   background-color: #787f84;
   color: #c1f4c9;
@@ -250,14 +324,13 @@ header button:hover {
   -moz-border-radius: 10px;
   cursor: pointer;
   margin: 20px 0;
-  width: 50%;
 }
 @media (min-width: 500px) {
-  .feature-description button {
+  .feature-description .buttons .login {
     font-size: 1.6rem;
   }
 }
-.feature-description button:hover {
+.feature-description .buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
 }
@@ -301,7 +374,43 @@ header button:hover {
   justify-content: center;
   align-items: center;
 }
-.testimonials button {
+.testimonials .user-stories .user-container {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px dashed black;
+}
+.testimonials .user-stories .user-container h3 {
+  padding-top: 1rem;
+}
+.testimonials .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials .buttons .signup {
+  width: 45%;
+  margin: 0.5rem;
+  padding: 2rem 4rem;
+  background-color: #c1f4c9;
+  color: #787f84;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+@media (min-width: 500px) {
+  .testimonials .buttons .signup {
+    font-size: 1.6rem;
+  }
+}
+.testimonials .buttons .signup:hover {
+  background-color: #787f84;
+  color: #c1f4c9;
+}
+.testimonials .buttons .login {
+  width: 45%;
+  margin: 0.5rem;
   padding: 2rem 4rem;
   background-color: #787f84;
   color: #c1f4c9;
@@ -311,14 +420,13 @@ header button:hover {
   -moz-border-radius: 10px;
   cursor: pointer;
   margin: 20px 0;
-  width: 33%;
 }
 @media (min-width: 500px) {
-  .testimonials button {
+  .testimonials .buttons .login {
     font-size: 1.6rem;
   }
 }
-.testimonials button:hover {
+.testimonials .buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
 }

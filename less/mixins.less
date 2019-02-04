@@ -32,6 +32,25 @@
     }
 }
 
+.signup-btn(@bgcolor:#c1f4c9, @font-color:#787f84) {
+    padding: 2rem 4rem;
+    background-color: @bgcolor;
+    color: @font-color;
+    border: 1px solid black;
+    .border-radius(10px);
+    cursor: pointer;
+    margin: 20px 0;
+
+    @media @desktop {
+        font-size: 1.6rem;
+    }
+
+    &:hover {
+        background-color: @font-color;
+        color: @bgcolor;
+    }
+}
+
 
 // .custom-btn(@width: 300px, @height: 200px, @bgcolor: white, @font-color: black) {
 //     width: @width;

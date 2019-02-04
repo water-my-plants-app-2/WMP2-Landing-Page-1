@@ -39,11 +39,22 @@
         // align-items: center;
     }
 
-    button {
-        .login-btn();
-        width: 50%;
-        // align-content: center
-    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    
+        .signup {
+          width: 45%;
+          margin: .5rem;
+          .signup-btn();
+        }
+        .login {
+          width: 45%;
+          margin: .5rem;
+          .login-btn();
+        }
+      }
+
 }
 
 
@@ -83,14 +94,32 @@
         div {
             .column-centered-section;
         }
+
+        .user-container {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px dashed black;
+
+            h3 {
+                padding-top: 1rem;
+            }
+        }
     }
 
-    button {
-        .login-btn;
-        width: 33%;
-    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    
+        .signup {
+          width: 45%;
+          margin: .5rem;
+          .signup-btn();
+        }
+        .login {
+          width: 45%;
+          margin: .5rem;
+          .login-btn();
+        }
+      }
 
-    img {
-        
-    }
 }

@@ -30,13 +30,20 @@ header {
   img {
     width: 20%;
   }
-  button {
-    // padding: 2rem 5rem;
-    // font-size: 2rem;
-    // :hover {
-    //   background-color: #dee7e1;
-    // }
-   .login-btn();
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .signup {
+      width: 45%;
+      margin: .5rem;
+      .signup-btn();
+    }
+    .login {
+      width: 45%;
+      margin: .5rem;
+      .login-btn();
+    }
   }
 }
 
