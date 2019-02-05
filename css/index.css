@@ -224,13 +224,13 @@ header .text-and-logo {
   justify-content: space-evenly;
   align-items: center;
 }
-header img {
+header .text-and-logo img {
   width: 20%;
 }
-header h1 {
+header .text-and-logo h1 {
   color: black;
 }
-header p {
+header .text-and-logo p {
   margin-top: 2rem;
   width: 70%;
   color: #787f84;
@@ -440,55 +440,6 @@ header .buttons .login:hover {
   align-items: center;
   padding: 0 2rem;
 }
-.testimonials .buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-}
-.testimonials .buttons .signup {
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #c1f4c9;
-  color: #787f84;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 1rem 0 2.5rem 0;
-}
-@media (min-width: 800px) {
-  .testimonials .buttons .signup {
-    font-size: 1.6rem;
-  }
-}
-.testimonials .buttons .signup:hover {
-  background-color: #787f84;
-  color: #c1f4c9;
-}
-.testimonials .buttons .login {
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #787f84;
-  color: #c1f4c9;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 2.5rem 0 1rem 0;
-}
-@media (min-width: 800px) {
-  .testimonials .buttons .login {
-    font-size: 1.6rem;
-  }
-}
-.testimonials .buttons .login:hover {
-  background-color: #c1f4c9;
-  color: #787f84;
-}
 .testimonials .user-stories {
   width: 100%;
   display: flex;
@@ -544,6 +495,55 @@ header .buttons .login:hover {
 }
 .testimonials .user-stories .user-container h3 {
   padding-top: 1rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+.buttons .signup {
+  padding: 1rem 4rem;
+  width: 75%;
+  background-color: #c1f4c9;
+  color: #787f84;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  cursor: pointer;
+  margin: 1rem 0 2.5rem 0;
+}
+@media (min-width: 800px) {
+  .buttons .signup {
+    font-size: 1.6rem;
+  }
+}
+.buttons .signup:hover {
+  background-color: #787f84;
+  color: #c1f4c9;
+}
+.buttons .login {
+  padding: 1rem 4rem;
+  width: 75%;
+  background-color: #787f84;
+  color: #c1f4c9;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  cursor: pointer;
+  margin: 2.5rem 0 1rem 0;
+}
+@media (min-width: 800px) {
+  .buttons .login {
+    font-size: 1.6rem;
+  }
+}
+.buttons .login:hover {
+  background-color: #c1f4c9;
+  color: #787f84;
 }
 footer {
   text-align: center;
