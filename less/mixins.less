@@ -13,14 +13,22 @@
 	-moz-border-radius: @radius;
 }
 
+.btn-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
 .login-btn(@bgcolor:#787f84, @font-color:#c1f4c9) {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
+    width: 75%;
     background-color: @bgcolor;
     color: @font-color;
     border: 1px solid black;
     .border-radius(10px);
     cursor: pointer;
-    margin: 20px 0;
+    margin: 2.5rem 0 1rem 0;
 
     @media @desktop {
         font-size: 1.6rem;
@@ -33,13 +41,14 @@
 }
 
 .signup-btn(@bgcolor:#c1f4c9, @font-color:#787f84) {
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
+    width: 75%;
     background-color: @bgcolor;
     color: @font-color;
     border: 1px solid black;
     .border-radius(10px);
     cursor: pointer;
-    margin: 20px 0;
+    margin: 1rem 0 2.5rem 0;
 
     @media @desktop {
         font-size: 1.6rem;

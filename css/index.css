@@ -1,3 +1,10 @@
+.btn-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -183,7 +190,8 @@ img {
 }
 button {
   font-size: 2rem;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #787f84;
   color: #c1f4c9;
   border: 1px solid black;
@@ -191,7 +199,7 @@ button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 2.5rem 0 1rem 0;
 }
 @media (min-width: 500px) {
   button {
@@ -203,6 +211,7 @@ button:hover {
   color: #787f84;
 }
 header {
+  width: 100%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -223,12 +232,14 @@ header p {
 }
 header .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 0 2rem;
 }
 header .buttons .signup {
-  width: 45%;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #c1f4c9;
   color: #787f84;
   border: 1px solid black;
@@ -236,7 +247,7 @@ header .buttons .signup {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 1rem 0 2.5rem 0;
 }
 @media (min-width: 500px) {
   header .buttons .signup {
@@ -248,8 +259,8 @@ header .buttons .signup:hover {
   color: #c1f4c9;
 }
 header .buttons .login {
-  width: 45%;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #787f84;
   color: #c1f4c9;
   border: 1px solid black;
@@ -257,7 +268,7 @@ header .buttons .login {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 2.5rem 0 1rem 0;
 }
 @media (min-width: 500px) {
   header .buttons .login {
@@ -269,10 +280,18 @@ header .buttons .login:hover {
   color: #787f84;
 }
 .feature-description {
+  background-image: linear-gradient(135deg, #787f84 25%, #bbe5cb 75%, #fefefe);
+}
+.feature-description .icons-and-txt {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg, #787f84 25%, #bbe5cb 75%, #fefefe);
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .feature-description .icons-and-txt {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
 .feature-description .feature-icon-container {
   width: 100%;
@@ -280,6 +299,16 @@ header .buttons .login:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 4%;
+}
+@media (min-width: 500px) {
+  .feature-description .feature-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    border: 1px solid red;
+  }
 }
 .feature-description .feature-icon-container .feature-header {
   padding: 0 2rem 2rem 2rem;
@@ -305,7 +334,16 @@ header .buttons .login:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
+  border: 1px solid red;
   color: white;
+}
+@media (min-width: 500px) {
+  .feature-description .feature-text-container {
+    width: 48%;
+  }
+}
+.feature-description .feature-text-container h1 {
+  padding: 2rem;
 }
 .feature-description .feature-text-container p {
   padding: 2rem;
@@ -315,15 +353,21 @@ header .buttons .login:hover {
   width: 33%;
   background-color: black;
 }
+@media (min-width: 500px) {
+  .feature-description .feature-text-container .divider {
+    display: none;
+  }
+}
 .feature-description .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   padding: 0 2rem;
 }
 .feature-description .buttons .signup {
-  width: 45%;
-  margin: 0.5rem;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #c1f4c9;
   color: #787f84;
   border: 1px solid black;
@@ -331,7 +375,7 @@ header .buttons .login:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 1rem 0 2.5rem 0;
 }
 @media (min-width: 500px) {
   .feature-description .buttons .signup {
@@ -343,9 +387,8 @@ header .buttons .login:hover {
   color: #c1f4c9;
 }
 .feature-description .buttons .login {
-  width: 45%;
-  margin: 0.5rem;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #787f84;
   color: #c1f4c9;
   border: 1px solid black;
@@ -353,7 +396,7 @@ header .buttons .login:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 2.5rem 0 1rem 0;
 }
 @media (min-width: 500px) {
   .feature-description .buttons .login {
@@ -413,12 +456,14 @@ header .buttons .login:hover {
 }
 .testimonials .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 .testimonials .buttons .signup {
-  width: 45%;
-  margin: 0.5rem;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #c1f4c9;
   color: #787f84;
   border: 1px solid black;
@@ -426,7 +471,7 @@ header .buttons .login:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 1rem 0 2.5rem 0;
 }
 @media (min-width: 500px) {
   .testimonials .buttons .signup {
@@ -438,9 +483,8 @@ header .buttons .login:hover {
   color: #c1f4c9;
 }
 .testimonials .buttons .login {
-  width: 45%;
-  margin: 0.5rem;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
+  width: 75%;
   background-color: #787f84;
   color: #c1f4c9;
   border: 1px solid black;
@@ -448,7 +492,7 @@ header .buttons .login:hover {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   cursor: pointer;
-  margin: 20px 0;
+  margin: 2.5rem 0 1rem 0;
 }
 @media (min-width: 500px) {
   .testimonials .buttons .login {

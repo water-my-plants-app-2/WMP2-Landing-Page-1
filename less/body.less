@@ -4,7 +4,7 @@
 //     background-image: 
 
 //     linear-gradient(
-//     @light-grey(255, 0, 0, 0.45), 
+//     @light-grey (255, 0, 0, 0.45), 
 //     @light-green(255, 0, 0, 0.45)
 //     ),
 
@@ -13,16 +13,20 @@
 
 
 .feature-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(135deg, @dark-grey 25%, @dark-green 75%, @whiteish);
+    background-image:linear-gradient(135deg, @dark-grey 25%, @dark-green 75%, @whiteish);
 
- 
-    // h2 {
-    //     padding: 2rem;
-    //     background-color: white;    
-    // }
+    
+   
+    .icons-and-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+        
+        @media @desktop {
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
 
     .feature-icon-container {
         width: 100%;
@@ -30,13 +34,19 @@
         flex-wrap: wrap;
         justify-content: space-around;
         padding-top: 4%;
-        // border: 1px solid red;
+
+        @media @desktop {
+            .column-centered-section;
+            width: 48%;
+            border: 1px solid red;
+
+        }
 
         .feature-header {
             padding: 0 2rem 2rem 2rem;
             color: white;
             width: 100%;
-            align-content: center
+            align-content: center;
 
         }
 
@@ -57,9 +67,15 @@
     .feature-text-container {
         .column-centered-section;
         width: 100%;
-        // border: 1px solid red;
+        border: 1px solid red;
         color: white;
 
+        @media @desktop {
+            width: 48%;
+        }
+        h1 {
+            padding: 2rem;
+        }
         p {
             padding: 2rem;
         }
@@ -71,24 +87,22 @@
             height: 5px;
             width: 33%;
             background-color: black;
+
+            @media @desktop {
+                display: none;
+            }
             
         }
     }
 
     .buttons {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 2rem;
+        .btn-stack();
 
         .signup {
-          width: 45%;
-          margin: .5rem;
-          .signup-btn();
+            .signup-btn();
         }
         .login {
-          width: 45%;
-          margin: .5rem;
-          .login-btn();
+            .login-btn();
         }
       }
 
@@ -144,18 +158,13 @@
     }
 
     .buttons {
-        display: flex;
-        justify-content: space-between;
-        
+        .btn-stack();
+
         .signup {
-          width: 45%;
-          margin: .5rem;
-          .signup-btn();
+            .signup-btn();
         }
         .login {
-          width: 45%;
-          margin: .5rem;
-          .login-btn();
+            .login-btn();
         }
       }
 
