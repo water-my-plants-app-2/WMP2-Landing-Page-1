@@ -11,12 +11,37 @@
 //     url(images/jungle.jpg);
 // }
 
+.section-divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid red;
+    // padding: 0 2rem;
+
+    .divider-h1 {
+        font-family: sans-serif;
+        padding-bottom: 2rem; 
+        text-align: center;
+    }
+
+    .divider-h3 {
+        font-family: sans-serif;
+        text-align: center;
+    }  
+
+    .divider-bar {
+        height: 5px;
+        width: 33%;
+        background-color: black;
+        margin: 4rem 0 ;
+        
+    }
+}
 
 .feature-description {
     background-image:linear-gradient(135deg, @dark-grey 25%, @dark-green 75%, @whiteish);
-
     
-   
     .icons-and-txt {
         display: flex;
         flex-direction: column;
@@ -38,7 +63,7 @@
         @media @desktop {
             .column-centered-section;
             width: 48%;
-            border: 1px solid red;
+            // border: 1px solid red;
 
         }
 
@@ -51,14 +76,15 @@
         }
 
         img {
-            max-width: 50%;
+            width: 96px;
+            height: 96px;
             padding: 1%;
-            width: 100px;
-            height: 100px;
+            // width: 100px;
+            // height: 100px;
 
             @media @desktop {
-                width: 200px;
-                height: 200px;
+                // width: 200px;
+                // height: 200px;
             }
 
         }
@@ -67,7 +93,7 @@
     .feature-text-container {
         .column-centered-section;
         width: 100%;
-        border: 1px solid red;
+        // border: 1px solid red;
         color: white;
 
         @media @desktop {
@@ -87,6 +113,7 @@
             height: 5px;
             width: 33%;
             background-color: black;
+            margin: 2rem;
 
             @media @desktop {
                 display: none;
@@ -112,13 +139,23 @@
 .testimonials {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     // border: 1px solid red;
     padding: 0 2rem;
     
+    .divider {
+        height: 5px;
+        width: 33%;
+        background-color: black;
+        margin: 4rem 0 2rem 0;
+        
+    }
+
     .testimonial-intro {
         .column-centered-section;
-        margin-top: 1px;
-        padding: 2rem;
+        // margin-top: 1rem;
+        // padding: 2rem;
       
         .test-h1 {
             font-family: sans-serif;
@@ -128,16 +165,8 @@
         .test-h3 {
             font-family: sans-serif;
             text-align: center;
-            padding-bottom: 5rem;
-        }
-    
-        .divider {
-            height: 5px;
-            width: 33%;
-            background-color: black;
-            
-        }
-    
+            padding-bottom: 2.5rem;
+        }    
     } 
     
     .user-stories {
@@ -156,19 +185,18 @@
             }
         }
     }
-
-    .buttons {
-        .btn-stack();
-
-        .signup {
-            .signup-btn();
-        }
-        .login {
-            .login-btn();
-        }
-      }
-
 }
+
+.buttons {
+    .btn-stack();
+
+    .signup {
+        .signup-btn();
+    }
+    .login {
+        .login-btn();
+    }
+  }
 
 footer {
     text-align: center;

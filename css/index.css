@@ -213,17 +213,19 @@ button:hover {
 header {
   width: 100%;
   height: 500px;
+  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #dee7e1 10%, #c1f4c9 30%, #bbe5cb);
+}
+header .text-and-logo {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #dee7e1 10%, #c1f4c9 30%, #bbe5cb);
 }
 header img {
   width: 20%;
 }
 header h1 {
-  color: #787f84;
+  color: black;
 }
 header p {
   margin-top: 2rem;
@@ -279,6 +281,27 @@ header .buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
 }
+.section-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-divider .divider-h1 {
+  font-family: sans-serif;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.section-divider .divider-h3 {
+  font-family: sans-serif;
+  text-align: center;
+}
+.section-divider .divider-bar {
+  height: 5px;
+  width: 33%;
+  background-color: black;
+  margin: 4rem 0 ;
+}
 .feature-description {
   background-image: linear-gradient(135deg, #787f84 25%, #bbe5cb 75%, #fefefe);
 }
@@ -307,7 +330,6 @@ header .buttons .login:hover {
     justify-content: center;
     align-items: center;
     width: 48%;
-    border: 1px solid red;
   }
 }
 .feature-description .feature-icon-container .feature-header {
@@ -317,16 +339,11 @@ header .buttons .login:hover {
   align-content: center;
 }
 .feature-description .feature-icon-container img {
-  max-width: 50%;
+  width: 96px;
+  height: 96px;
   padding: 1%;
-  width: 100px;
-  height: 100px;
 }
 @media (min-width: 500px) {
-  .feature-description .feature-icon-container img {
-    width: 200px;
-    height: 200px;
-  }
 }
 .feature-description .feature-text-container {
   display: flex;
@@ -334,7 +351,6 @@ header .buttons .login:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
   color: white;
 }
 @media (min-width: 500px) {
@@ -352,6 +368,7 @@ header .buttons .login:hover {
   height: 5px;
   width: 33%;
   background-color: black;
+  margin: 2rem;
 }
 @media (min-width: 500px) {
   .feature-description .feature-text-container .divider {
@@ -410,15 +427,21 @@ header .buttons .login:hover {
 .testimonials {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 2rem;
+}
+.testimonials .divider {
+  height: 5px;
+  width: 33%;
+  background-color: black;
+  margin: 4rem 0 2rem 0;
 }
 .testimonials .testimonial-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1px;
-  padding: 2rem;
 }
 .testimonials .testimonial-intro .test-h1 {
   font-family: sans-serif;
@@ -427,12 +450,7 @@ header .buttons .login:hover {
 .testimonials .testimonial-intro .test-h3 {
   font-family: sans-serif;
   text-align: center;
-  padding-bottom: 5rem;
-}
-.testimonials .testimonial-intro .divider {
-  height: 5px;
-  width: 33%;
-  background-color: black;
+  padding-bottom: 2.5rem;
 }
 .testimonials .user-stories {
   display: flex;
@@ -454,14 +472,14 @@ header .buttons .login:hover {
 .testimonials .user-stories .user-container h3 {
   padding-top: 1rem;
 }
-.testimonials .buttons {
+.buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
 }
-.testimonials .buttons .signup {
+.buttons .signup {
   padding: 1rem 4rem;
   width: 75%;
   background-color: #c1f4c9;
@@ -474,15 +492,15 @@ header .buttons .login:hover {
   margin: 1rem 0 2.5rem 0;
 }
 @media (min-width: 500px) {
-  .testimonials .buttons .signup {
+  .buttons .signup {
     font-size: 1.6rem;
   }
 }
-.testimonials .buttons .signup:hover {
+.buttons .signup:hover {
   background-color: #787f84;
   color: #c1f4c9;
 }
-.testimonials .buttons .login {
+.buttons .login {
   padding: 1rem 4rem;
   width: 75%;
   background-color: #787f84;
@@ -495,11 +513,11 @@ header .buttons .login:hover {
   margin: 2.5rem 0 1rem 0;
 }
 @media (min-width: 500px) {
-  .testimonials .buttons .login {
+  .buttons .login {
     font-size: 1.6rem;
   }
 }
-.testimonials .buttons .login:hover {
+.buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
 }
