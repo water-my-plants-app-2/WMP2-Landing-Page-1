@@ -5,6 +5,9 @@
   align-items: center;
   padding: 0 2rem;
 }
+.width-100 {
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -438,33 +441,69 @@ header .buttons .login:hover {
   padding: 0 2rem;
 }
 .testimonials .user-stories {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.6rem;
 }
-.testimonials .user-stories div {
+@media (min-width: 1200px) {
+  .testimonials .user-stories {
+    width: 1200px;
+  }
+}
+.testimonials .user-stories .left-button,
+.testimonials .user-stories .right-button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: none;
+  flex-direction: row;
+  color: #787f84;
+  background-color: #dee7e1;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.testimonials .user-stories .left-button:hover,
+.testimonials .user-stories .right-button:hover {
+  color: #dee7e1;
+  background-color: #787f84;
+  border: 2px solid #dee7e1;
+}
+.testimonials .user-stories .left-button {
+  top: 50%;
+  left: 2.5rem;
+  transform: translate(0, 50%);
+}
+.testimonials .user-stories .right-button {
+  top: 50%;
+  right: 2.5rem;
+  transform: translate(0, 50%);
 }
 .testimonials .user-stories .user-container {
+  display: none;
+  width: 100%;
   margin: 2rem 0;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   border: 1px dashed black;
 }
 .testimonials .user-stories .user-container h3 {
   padding-top: 1rem;
 }
-.buttons {
+.testimonials .buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
 }
-.buttons .signup {
+.testimonials .buttons .signup {
   padding: 1rem 4rem;
   width: 75%;
   background-color: #c1f4c9;
@@ -477,15 +516,15 @@ header .buttons .login:hover {
   margin: 1rem 0 2.5rem 0;
 }
 @media (min-width: 800px) {
-  .buttons .signup {
+  .testimonials .buttons .signup {
     font-size: 1.6rem;
   }
 }
-.buttons .signup:hover {
+.testimonials .buttons .signup:hover {
   background-color: #787f84;
   color: #c1f4c9;
 }
-.buttons .login {
+.testimonials .buttons .login {
   padding: 1rem 4rem;
   width: 75%;
   background-color: #787f84;
@@ -498,11 +537,11 @@ header .buttons .login:hover {
   margin: 2.5rem 0 1rem 0;
 }
 @media (min-width: 800px) {
-  .buttons .login {
+  .testimonials .buttons .login {
     font-size: 1.6rem;
   }
 }
-.buttons .login:hover {
+.testimonials .buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
 }

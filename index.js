@@ -1,7 +1,7 @@
 class Carousel {
     constructor (carousel){
         this.carousel = carousel;
-        this.users = document.querySelectorAll('.user-container');
+        this.users = document.querySelectorAll('.user-stories .user-container');
         console.log(this.users);
         this.leftArrow = document.querySelector('.left-button');
         this.rightArrow = document.querySelector('.right-button');
@@ -31,5 +31,6 @@ class Carousel {
 }
 
 let carousel = new Carousel(document.querySelector('.user-stories'));
+
 let users = document.querySelectorAll('.user-container')
-console.log(users);
+// console.log(`users`);

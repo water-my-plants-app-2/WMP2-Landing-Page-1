@@ -151,33 +151,93 @@
     padding: 0 2rem;
     
     .user-stories {
-        .column-centered-section;
-        div {
-            .column-centered-section;
+        
+        .width-100();
+        .flex(center, center);
+        
+        // what's position relative?
+        position: relative;
+        // what's overflow hidden?
+        overflow: hidden;
+        margin-top: 1.6rem;
+        @media(min-width: 1200px){
+            width: 1200px;
         }
-
+        .left-button, .right-button {
+            .flex(center);           
+            color: @dark-grey;
+            background-color: @light-grey;
+            font-size: 40px;
+            border-radius: 50%;
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            cursor: pointer;
+            &:hover {
+                color: @light-grey;
+                background-color: @dark-grey;
+                border: 2px solid @light-grey;
+            }
+        }
+        .left-button {
+            top: 50%;
+            left: 2.5rem;
+            transform: translate(0, 50%);
+        }
+        .right-button {
+            top: 50%;
+            right: 2.5rem;
+            transform: translate(0, 50%);
+        }
         .user-container {
+            display: none;
+            .width-100();
             margin: 2rem 0;
-            padding: 2rem 2rem 1rem 2rem;
+            padding: 2rem 2rem 2rem 2rem;
             border: 1px dashed black;
-
+    
             h3 {
                 padding-top: 1rem;
             }
+        
         }
     }
+
+    .buttons {
+        .btn-stack();
+    
+        .signup {
+            .signup-btn();
+        }
+        .login {
+            .login-btn();
+        }
+      }
+    
 }
 
-.buttons {
-    .btn-stack();
 
-    .signup {
-        .signup-btn();
-    }
-    .login {
-        .login-btn();
-    }
-  }
+
+
+    // .user-stories {
+    //     .column-centered-section;
+    //     div {
+    //         .column-centered-section;
+    //     }
+
+    //     .user-container {
+    //         margin: 2rem 0;
+    //         padding: 2rem 2rem 1rem 2rem;
+    //         border: 1px dashed black;
+
+    //         h3 {
+    //             padding-top: 1rem;
+    //         }
+    //     }
+    // }
+
+
+
 
 footer {
     text-align: center;
