@@ -577,12 +577,20 @@ footer {
   text-align: center;
 }
 .selector-bar {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
   border: 1px solid #787f84;
   margin: 1rem 0;
   padding: 1rem;
+}
+.selector-bar .tab {
+  cursor: pointer;
+}
+.selector-bar .active-tab {
+  background-color: #787f84;
+  color: #c1f4c9;
+  border: 2px solid #787f84;
 }
 @media (min-width: 500px) {
   .selector-bar {
