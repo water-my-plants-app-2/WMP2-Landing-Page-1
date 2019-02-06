@@ -17,7 +17,7 @@
     height: 50px;
     background-image:linear-gradient(135deg, @dark-grey 25%, @dark-green 75%, @whiteish);
     color: white;
-    .flex(space-evenly, center);
+    .flex(space-between, center);
     position: fixed;
     top: 0;
     z-index: 2;
@@ -36,25 +36,52 @@
     .logo-icon{
       width: 48px;
       height: 48px;
-      position: fixed;
-      right: 1rem;
+      margin-right: 1rem;
 
       @media @tablet {
           width: 64px;
           height: 64px;
-          right: 2rem;
+          margin-right: 2rem;
       }
     }
     .menu-button{
-      position: fixed;
-      left: 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
 
       @media @tablet {
-          left: 2rem;
+          margin-left: 2rem;
       }
     } 
 }
 
+.menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 75%;
+    height: 100vh;
+    background-color: @dark-green;
+    border: 1px solid @dark-grey;
+    border-top: none;
+    border-left: none;
+    z-index: 2;
+
+    @media @tablet {
+        top: 75px;
+    }
+    
+    li {
+        list-style-type: none;
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+}
+
+.menu-open {
+    display: block;
+}
 
 .cta {
     width: 100%;
@@ -72,6 +99,7 @@
         height: 100%;
         margin: 4rem;
         padding: 0 2rem;
+        // .border-radius(5%);
     }  
 
     .cta-text {
@@ -289,16 +317,6 @@
     }    
 }
 
-.buttons {
-    .btn-stack();
-
-    .signup {
-        .signup-btn();
-    }
-    .login {
-        .login-btn();
-    }
-}
 
 footer {
     text-align: center;

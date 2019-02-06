@@ -142,12 +142,17 @@ table {
 html {
   font-size: 62.5%;
 }
+@media (min-width: 800px) {
+  header {
+    max-width: 1000px;
+  }
+}
 body {
   font-family: 'noto sans', sans-serif;
 }
 @media (min-width: 800px) {
   body {
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -248,7 +253,7 @@ img {
   background-image: linear-gradient(135deg, #787f84 25%, #bbe5cb 75%, #fefefe);
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   position: fixed;
@@ -272,24 +277,50 @@ img {
 .header .logo-icon {
   width: 48px;
   height: 48px;
-  position: fixed;
-  right: 1rem;
+  margin-right: 1rem;
 }
 @media (min-width: 500px) {
   .header .logo-icon {
     width: 64px;
     height: 64px;
-    right: 2rem;
+    margin-right: 2rem;
   }
 }
 .header .menu-button {
-  position: fixed;
-  left: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 @media (min-width: 500px) {
   .header .menu-button {
-    left: 2rem;
+    margin-left: 2rem;
   }
+}
+.menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  width: 75%;
+  height: 100vh;
+  background-color: #bbe5cb;
+  border: 1px solid #787f84;
+  border-top: none;
+  border-left: none;
+  z-index: 2;
+}
+@media (min-width: 500px) {
+  .menu {
+    top: 75px;
+  }
+}
+.menu li {
+  list-style-type: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+.menu-open {
+  display: block;
 }
 .cta {
   width: 100%;
@@ -542,57 +573,51 @@ img {
 .testimonials .user-stories .user-container h3 {
   padding-top: 1rem;
 }
-.buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-}
-.buttons .signup {
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #c1f4c9;
-  color: #787f84;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 1rem 0 2.5rem 0;
-  font-size: 2rem;
-}
-@media (min-width: 500px) {
-  .buttons .signup {
-    font-size: 1.6rem;
-  }
-}
-.buttons .signup:hover {
-  background-color: #787f84;
-  color: #c1f4c9;
-}
-.buttons .login {
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #787f84;
-  color: #c1f4c9;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 2.5rem 0 1rem 0;
-  font-size: 2rem;
-}
-@media (min-width: 500px) {
-  .buttons .login {
-    font-size: 1.6rem;
-  }
-}
-.buttons .login:hover {
-  background-color: #c1f4c9;
-  color: #787f84;
-}
 footer {
   text-align: center;
+}
+.selector-bar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #787f84;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+@media (min-width: 500px) {
+  .selector-bar {
+    margin-top: 75px;
+  }
+}
+.team-members {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  border: 1px solid red;
+}
+@media (min-width: 500px) {
+  .team-members {
+    max-width: 500px;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 800px) {
+  .team-members {
+    max-width: 800px;
+  }
+}
+.team-members .member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: column;
+  border: 1px dotted black;
+  padding: 2rem;
+  margin: 2rem;
+}
+.team-members .member h1 {
+  padding-top: 1rem;
 }
