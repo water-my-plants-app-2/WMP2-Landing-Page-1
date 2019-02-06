@@ -6,12 +6,24 @@
     border: 1px solid @dark-grey;
     margin: 1rem 0;
     padding: 1rem;
+    
+    .tab {
+        cursor: pointer;
+        
+    }
+
+    .active-tab {
+        background-color: @dark-grey;
+        color: @light-green;
+        border: 2px solid @dark-grey;
+    }
 
 
     @media @tablet {
         margin-top: 75px;
     }
 }
+
 
 .team-members {
     .flex(center,center);
