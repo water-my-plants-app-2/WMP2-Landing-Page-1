@@ -1,0 +1,43 @@
+.user-stories {
+    .width-100();
+    .flex(center, center);
+    height: 500px;
+    // what's position relative?
+    position: relative;
+    // what's overflow hidden?
+    overflow: hidden;
+    margin-top: 1.6rem;
+    @media(min-width: 1200px){
+        width: 1200px;
+    }
+    .left-button, .right-button {
+        .flex(center);
+        color: @dark-grey;
+        background-color: @light-grey;
+        font-size: 40px;
+        border-radius: 50%;
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        &:hover {
+            color: @light-grey;
+            background-color: @dark-grey;
+            border: 2px solid @light-grey;
+        }
+    }
+    .left-button {
+        top: 50%;
+        left: 2.5rem;
+        transform: translate(0, 50%);
+    }
+    .right-button {
+        top: 50%;
+        right: 2.5rem;
+        transform: translate(0, 50%);
+    }
+    img {
+        .width-100();
+        display: none;
+    }
+}
