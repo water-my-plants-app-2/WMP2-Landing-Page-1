@@ -11,6 +11,104 @@
 //     url(images/jungle.jpg);
 // }
 
+.header {
+    
+    width: 100%;
+    height: 50px;
+    background-image:linear-gradient(135deg, @dark-grey 25%, @dark-green 75%, @whiteish);
+    color: white;
+    .flex(space-evenly, center);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+  
+    @media @tablet {
+        height: 75px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+
+      @media @tablet {
+          font-size: 3rem;
+      }
+    }
+    .logo-icon{
+      width: 48px;
+      height: 48px;
+      position: fixed;
+      right: 1rem;
+
+      @media @tablet {
+          width: 64px;
+          height: 64px;
+          right: 2rem;
+      }
+    }
+    .menu-button{
+      position: fixed;
+      left: 1rem;
+
+      @media @tablet {
+          left: 2rem;
+      }
+    } 
+}
+
+.cta {
+ 
+    width: 100%;
+    height: 500px;
+    background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #dee7e1 10%, #c1f4c9 30%, #bbe5cb);
+  
+    .text-and-logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    
+      img {
+        width: 20%;
+      }
+  
+      h1 {
+        color: black;
+      }
+  
+      p {
+        margin-top: 2rem;
+        width: 70%;
+        color: @dark-grey;
+      }
+  
+    }
+  
+    
+  
+    .buttons {
+      .btn-stack();
+  
+      .signup {
+          .signup-btn();
+      }
+      .login {
+          .login-btn();
+      }
+    }
+  
+    @media @mobile {
+      margin-top: 50px;
+    }
+  
+    @media @tablet {
+      margin-top: 75px;
+    }
+    
+  
+  }
+  
+  
+  
 .section-divider {
     display: flex;
     flex-direction: column;
@@ -143,6 +241,7 @@
 
 
 .testimonials {
+    // max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,8 +261,8 @@
         // what's overflow hidden?
         overflow: hidden;
         margin-top: 1.6rem;
-        @media(min-width: 1200px){
-            width: 1200px;
+        @media(min-width: 800px){
+            width: 800px;
         }
         .left-button, .right-button {
             .flex(center);           

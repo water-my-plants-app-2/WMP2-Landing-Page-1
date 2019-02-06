@@ -1,25 +1,7 @@
-// .main-nav {
-//   background: @main-nav-bg-color;
-//   color: @main-nav-color;
 
-//   .top-menu {
-//     h1 {
-//       text-align: center;
-//       font-size: 1.6rem;
-//       padding: 20px;
 
-//       a {
-//         text-decoration: none;
-
-//         &:hover {
-//           text-decoration: underline;
-//         }
-//       }
-//     }
-//   } 
-// }
-
-header {
+.desktop-header {
+ 
   width: 100%;
   height: 500px;
   background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #dee7e1 10%, #c1f4c9 30%, #bbe5cb);
@@ -58,5 +40,15 @@ header {
         .login-btn();
     }
   }
+
+  @media @mobile {
+    margin-top: 50px;
+  }
+
+  @media @tablet {
+    margin-top: 75px;
+  }
+  
+
 }
 
