@@ -191,58 +191,14 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-button {
-  font-size: 2rem;
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #787f84;
-  color: #c1f4c9;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 2.5rem 0 1rem 0;
-}
-@media (min-width: 800px) {
-  button {
-    font-size: 1.6rem;
-  }
-}
-button:hover {
-  background-color: #c1f4c9;
-  color: #787f84;
-}
-.desktop-header {
-  width: 100%;
-  height: 500px;
-  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #dee7e1 10%, #c1f4c9 30%, #bbe5cb);
-}
-.desktop-header .text-and-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.desktop-header .text-and-logo img {
-  width: 20%;
-}
-.desktop-header .text-and-logo h1 {
-  color: black;
-}
-.desktop-header .text-and-logo p {
-  margin-top: 2rem;
-  width: 70%;
-  color: #787f84;
-}
-.desktop-header .buttons {
+.buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
 }
-.desktop-header .buttons .signup {
+.buttons .signup {
   padding: 1rem 4rem;
   width: 75%;
   background-color: #c1f4c9;
@@ -253,17 +209,18 @@ button:hover {
   -moz-border-radius: 5px;
   cursor: pointer;
   margin: 1rem 0 2.5rem 0;
+  font-size: 2rem;
 }
-@media (min-width: 800px) {
-  .desktop-header .buttons .signup {
+@media (min-width: 500px) {
+  .buttons .signup {
     font-size: 1.6rem;
   }
 }
-.desktop-header .buttons .signup:hover {
+.buttons .signup:hover {
   background-color: #787f84;
   color: #c1f4c9;
 }
-.desktop-header .buttons .login {
+.buttons .login {
   padding: 1rem 4rem;
   width: 75%;
   background-color: #787f84;
@@ -274,25 +231,16 @@ button:hover {
   -moz-border-radius: 5px;
   cursor: pointer;
   margin: 2.5rem 0 1rem 0;
+  font-size: 2rem;
 }
-@media (min-width: 800px) {
-  .desktop-header .buttons .login {
+@media (min-width: 500px) {
+  .buttons .login {
     font-size: 1.6rem;
   }
 }
-.desktop-header .buttons .login:hover {
+.buttons .login:hover {
   background-color: #c1f4c9;
   color: #787f84;
-}
-@media (max-width:500px) {
-  .desktop-header {
-    margin-top: 50px;
-  }
-}
-@media (min-width: 500px) {
-  .desktop-header {
-    margin-top: 75px;
-  }
 }
 .header {
   width: 100%;
@@ -345,74 +293,11 @@ button:hover {
 }
 .cta {
   width: 100%;
-  height: 500px;
-  background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #dee7e1 10%, #c1f4c9 30%, #bbe5cb);
-}
-.cta .text-and-logo {
+  background-image: linear-gradient(45deg, #dee7e1 10%, #c1f4c9 50%, #bbe5cb);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-}
-.cta .text-and-logo img {
-  width: 20%;
-}
-.cta .text-and-logo h1 {
-  color: black;
-}
-.cta .text-and-logo p {
-  margin-top: 2rem;
-  width: 70%;
-  color: #787f84;
-}
-.cta .buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-}
-.cta .buttons .signup {
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #c1f4c9;
-  color: #787f84;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 1rem 0 2.5rem 0;
-}
-@media (min-width: 800px) {
-  .cta .buttons .signup {
-    font-size: 1.6rem;
-  }
-}
-.cta .buttons .signup:hover {
-  background-color: #787f84;
-  color: #c1f4c9;
-}
-.cta .buttons .login {
-  padding: 1rem 4rem;
-  width: 75%;
-  background-color: #787f84;
-  color: #c1f4c9;
-  border: 1px solid black;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  cursor: pointer;
-  margin: 2.5rem 0 1rem 0;
-}
-@media (min-width: 800px) {
-  .cta .buttons .login {
-    font-size: 1.6rem;
-  }
-}
-.cta .buttons .login:hover {
-  background-color: #c1f4c9;
-  color: #787f84;
 }
 @media (max-width:500px) {
   .cta {
@@ -423,6 +308,25 @@ button:hover {
   .cta {
     margin-top: 75px;
   }
+}
+.cta img {
+  width: 100%;
+  height: 100%;
+  margin: 4rem;
+  padding: 0 2rem;
+}
+.cta .cta-text {
+  margin: 0 4rem 4rem 4rem;
+  padding: 0 2rem;
+}
+.cta .cta-text h1 {
+  margin-bottom: 2rem;
+}
+.cta .cta-text p {
+  color: #787f84;
+}
+.cta .buttons {
+  width: 100%;
 }
 .section-divider {
   display: flex;
@@ -542,8 +446,9 @@ button:hover {
   -moz-border-radius: 5px;
   cursor: pointer;
   margin: 1rem 0 2.5rem 0;
+  font-size: 2rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .feature-description .buttons .signup {
     font-size: 1.6rem;
   }
@@ -563,8 +468,9 @@ button:hover {
   -moz-border-radius: 5px;
   cursor: pointer;
   margin: 2.5rem 0 1rem 0;
+  font-size: 2rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .feature-description .buttons .login {
     font-size: 1.6rem;
   }
@@ -654,8 +560,9 @@ button:hover {
   -moz-border-radius: 5px;
   cursor: pointer;
   margin: 1rem 0 2.5rem 0;
+  font-size: 2rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .buttons .signup {
     font-size: 1.6rem;
   }
@@ -675,8 +582,9 @@ button:hover {
   -moz-border-radius: 5px;
   cursor: pointer;
   margin: 2.5rem 0 1rem 0;
+  font-size: 2rem;
 }
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .buttons .login {
     font-size: 1.6rem;
   }
