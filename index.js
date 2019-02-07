@@ -1,11 +1,11 @@
 class Carousel {
     constructor (carousel){
         this.carousel = carousel;
-        this.users = document.querySelectorAll('.user-stories .user-container');
+        this.users = document.querySelectorAll('.user-container');
         console.log(this.users);
         this.leftArrow = document.querySelector('.left-button');
         this.rightArrow = document.querySelector('.right-button');
-        this.users[0].style.display = 'block';
+        this.users[0].style.display = 'flex';
         this.leftArrow.addEventListener('click', () => this.moveLeft());
         this.rightArrow.addEventListener('click', () => this.moveRight());
         this.displayIndex = 0;
@@ -17,7 +17,7 @@ class Carousel {
         } else {
             this.displayIndex ++
         }
-        this.users[this.displayIndex].style.display = 'block';
+        this.users[this.displayIndex].style.display = 'flex';
     }
     moveLeft(){
         users.forEach(user => user.style.display ="none");
@@ -26,7 +26,7 @@ class Carousel {
         } else {
             this.displayIndex --
         }
-        this.users[this.displayIndex].style.display = 'block';
+        this.users[this.displayIndex].style.display = 'flex';
     }
 }
 
@@ -48,3 +48,11 @@ const menuButton = document.querySelector('.menu-button');
 
 //create an event listener, so that when menuButton is clicked, the toggleMenu button will be called
 menuButton.addEventListener('click', toggleMenu);
+
+// ADding the login link to all login links.
+
+const loginLinks = Array.from(document.querySelectorAll('.login-link'));
+loginLinks.map(link => link.setAttribute('href', 'https://kind-banach-2deafc.netlify.com/'));
+
+const signupLinks = Array.from(document.querySelectorAll('.signup-link'));
+signupLinks.map(link => link.setAttribute('href', 'https://kind-banach-2deafc.netlify.com/'));

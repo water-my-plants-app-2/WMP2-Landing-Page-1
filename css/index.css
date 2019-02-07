@@ -297,11 +297,11 @@ img {
 }
 .menu {
   display: none;
-  position: fixed;
+  position: relative;
   left: 0;
   top: 50px;
-  width: 75%;
-  height: 100vh;
+  width: 25%;
+  height: 30vh;
   background-color: #bbe5cb;
   border: 1px solid #787f84;
   border-top: none;
@@ -565,6 +565,9 @@ img {
 }
 .testimonials .user-stories .user-container {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 2rem 0;
   padding: 2rem 2rem 2rem 2rem;
@@ -577,12 +580,33 @@ footer {
   text-align: center;
 }
 .selector-bar {
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
+  align-content: center;
   border: 1px solid #787f84;
   margin: 1rem 0;
   padding: 1rem;
+}
+.selector-bar .tab {
+  cursor: pointer;
+  font-family: 'noto sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+@media (min-width: 500px) {
+  .selector-bar .tab {
+    font-size: 1.6rem;
+  }
+}
+.selector-bar .tab:hover {
+  background-color: #c1f4c9;
+  color: #787f84;
+}
+.selector-bar .active-tab {
+  background-color: #787f84;
+  color: #c1f4c9;
+  border: 2px solid #787f84;
 }
 @media (min-width: 500px) {
   .selector-bar {
@@ -590,12 +614,12 @@ footer {
   }
 }
 .team-members {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-direction: column;
-  border: 1px solid red;
+  flex-flow: row wrap;
 }
 @media (min-width: 500px) {
   .team-members {
@@ -605,7 +629,7 @@ footer {
 }
 @media (min-width: 800px) {
   .team-members {
-    max-width: 800px;
+    max-width: 1000px;
   }
 }
 .team-members .member {
@@ -620,4 +644,7 @@ footer {
 }
 .team-members .member h1 {
   padding-top: 1rem;
+}
+.team-members .hidden {
+  display: none;
 }

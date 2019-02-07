@@ -56,11 +56,11 @@
 
 .menu {
     display: none;
-    position: fixed;
+    position: relative;
     left: 0;
     top: 50px;
-    width: 75%;
-    height: 100vh;
+    width: 25%;
+    height: 30vh;
     background-color: @dark-green;
     border: 1px solid @dark-grey;
     border-top: none;
@@ -261,17 +261,12 @@
     align-items: center;
     // border: 1px solid red;
     padding: 0 2rem;
-    
-    
 
     .user-stories {
         
         .width-100();
         .flex(center, center);
-        
-        // what's position relative?
         position: relative;
-        // what's overflow hidden?
         overflow: hidden;
         margin-top: 1.6rem;
         @media(min-width: 800px){
@@ -305,6 +300,9 @@
         }
         .user-container {
             display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .width-100();
             margin: 2rem 0;
             padding: 2rem 2rem 2rem 2rem;
