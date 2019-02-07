@@ -18,7 +18,8 @@ class TabLink {
         // console.log(this.tabData);
 
         if (this.tabData === 'all'){
-            this.members = document.querySelectorAll('.member');
+            this.members = Array.from(document.querySelectorAll('.member'));
+            this.members.shift();
         } else if (this.tabData ==='ux-ui' || this.tabData === 'ios'){
             this.members = document.querySelectorAll('.hidden');
         } else {
