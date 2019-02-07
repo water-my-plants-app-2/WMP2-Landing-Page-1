@@ -149,6 +149,7 @@ html {
 }
 body {
   font-family: 'noto sans', sans-serif;
+  position: relative;
 }
 @media (min-width: 800px) {
   body {
@@ -297,16 +298,17 @@ img {
 }
 .menu {
   display: none;
-  position: relative;
+  position: absolute;
   left: 0;
   top: 50px;
-  width: 25%;
-  height: 30vh;
+  margin: 0 auto;
+  width: 20rem;
+  height: 20vh;
   background-color: #bbe5cb;
   border: 1px solid #787f84;
   border-top: none;
   border-left: none;
-  z-index: 2;
+  z-index: 3;
 }
 @media (min-width: 500px) {
   .menu {
@@ -580,19 +582,19 @@ footer {
   text-align: center;
 }
 .selector-bar {
-  margin-top: 100px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   border: 1px solid #787f84;
-  margin: 1rem 0;
-  padding: 1rem;
+  position: absolute;
+  top: 50px;
 }
 .selector-bar .tab {
   cursor: pointer;
   font-family: 'noto sans', sans-serif;
   font-size: 1rem;
-  margin-top: 50px;
+  margin: 1rem 0;
 }
 @media (min-width: 500px) {
   .selector-bar .tab {
@@ -610,7 +612,7 @@ footer {
 }
 @media (min-width: 500px) {
   .selector-bar {
-    margin-top: 75px;
+    top: 75px;
   }
 }
 .team-members {
@@ -620,6 +622,7 @@ footer {
   align-items: center;
   flex-direction: row;
   flex-flow: row wrap;
+  margin: 125px auto;
 }
 @media (min-width: 500px) {
   .team-members {
