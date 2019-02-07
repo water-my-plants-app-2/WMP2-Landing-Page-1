@@ -565,6 +565,9 @@ img {
 }
 .testimonials .user-stories .user-container {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 2rem 0;
   padding: 2rem 2rem 2rem 2rem;
@@ -601,7 +604,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   flex-direction: column;
   border: 1px solid red;
 }
