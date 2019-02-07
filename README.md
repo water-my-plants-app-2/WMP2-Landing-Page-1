@@ -1,5 +1,7 @@
 # WMP2-Landing-Page-1
 Landing Page 1 for Water My Plants App 2
+https://condescending-johnson-a73a40.netlify.com/about.html
+
 
 # JavaScript
 * The menu on both pages is toggled using an event listener. I first created a variable containing the menu element, then a variable that contains the menu button element, then a function that toggles a menu-open style on and off the element. That function fires when the menu button is clicked.
