@@ -48,3 +48,11 @@ const menuButton = document.querySelector('.menu-button');
 
 //create an event listener, so that when menuButton is clicked, the toggleMenu button will be called
 menuButton.addEventListener('click', toggleMenu);
+
+// ADding the login link to all login links.
+
+const loginLinks = Array.from(document.querySelectorAll('.login-link'));
+loginLinks.map(link => link.setAttribute('href', 'https://kind-banach-2deafc.netlify.com/'));
+
+const signupLinks = Array.from(document.querySelectorAll('.signup-link'));
+signupLinks.map(link => link.setAttribute('href', 'https://kind-banach-2deafc.netlify.com/'));

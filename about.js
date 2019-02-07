@@ -19,6 +19,8 @@ class TabLink {
 
         if (this.tabData === 'all'){
             this.members = document.querySelectorAll('.member');
+        } else if (this.tabData ==='ux-ui' || this.tabData === 'ios'){
+            this.members = document.querySelectorAll('.hidden');
         } else {
             this.members = document.querySelectorAll(`[data-tab='${this.tabData}']`);
             
