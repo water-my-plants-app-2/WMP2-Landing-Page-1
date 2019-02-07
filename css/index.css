@@ -303,7 +303,6 @@ img {
   top: 50px;
   margin: 0 auto;
   width: 20rem;
-  height: 20vh;
   background-color: #bbe5cb;
   border: 1px solid #787f84;
   border-top: none;
@@ -578,7 +577,15 @@ img {
 .testimonials .user-stories .user-container h3 {
   padding-top: 1rem;
 }
-footer {
+.footer-container {
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(135deg, #787f84 25%, #bbe5cb 75%, #fefefe);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   text-align: center;
 }
 .selector-bar {
