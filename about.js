@@ -54,3 +54,10 @@ class TabMember {
 let tabs = document.querySelectorAll('.tab');
 // send each tab through the TabLink class constructor
 tabs.forEach(tab => new TabLink(tab));
+
+
+const loginLinks = Array.from(document.querySelectorAll('.login-link'));
+loginLinks.map(link => link.setAttribute('href', 'https://kind-banach-2deafc.netlify.com/'));
+
+const signupLinks = Array.from(document.querySelectorAll('.signup-link'));
+signupLinks.map(link => link.setAttribute('href', 'https://kind-banach-2deafc.netlify.com/'));
